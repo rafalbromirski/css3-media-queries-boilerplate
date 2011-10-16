@@ -1,0 +1,337 @@
+/* ---------------------------------------------------------------------------------------------------------------------
+
+  88888888e.     d8b       88888888e.       d8b       8bc:..  88888    .8888888.    88888  888888888.        d8b
+  888888888b    d888b      888888888b      d888b      888888bb88888   d888888888b   88888  8888888888b      d888b
+  888888888D   d88888b     888888888D     d88888b     8888888888888  C88888888888D  88888  88888888888D    d88888b
+  88888888P   d8888888b    88888888P     d8888888b    8888888888888  C88888888888D  88888  88888888888D   d8888888b
+  888888P    d888888888b   88888888b    d888888888b   8888888888888   d888888888P   88888  8888888888b   d888888888b
+  88888     d88888888888b  888888888b  d88888888888b  8888888888888    '8888888'    88888  888888888'   d88888888888b
+
+------------------------------------------------------------------------------------------------------------------------
+
+    Author: Rafal Bromirski
+    www: http://paranoida.com/
+    blog: http://lab.paranoida.com/
+
+    twitter: http://twitter.com/paranoida
+    dribbble: http://dribbble.com/paranoida
+
+    Licensed under a MIT License
+
+--------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --- main content ------------------------------------------------------------------------------------------------- */
+
+body
+{
+    background: #e3e2dc;
+    margin: 0;
+    padding: 10em 0 0;
+    font: 10px Helvetica, Arial, sans-serif;
+    color: #95938e;
+    font-weight: bold;
+}
+
+.r
+{
+    font-size: 16em;
+    line-height: 50%;
+    color: #fff;
+    display: none;
+    text-align: center;
+    letter-spacing: -2px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+
+.r-infinite
+{
+    display: block;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -65px;
+    opacity: .7;
+
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.footer:hover
+{
+    opacity: 1;
+}
+
+
+/* --- media queries ------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1600px)
+{
+    .r
+    {
+        font-size: 14em;
+    }
+
+    .r-infinite
+    {
+        display: none;
+    }
+
+    .r-1600
+    {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1400px)
+{
+    .r
+    {
+        font-size: 12em;
+    }
+
+    .r-1600
+    {
+        display: none;
+    }
+
+    .r-1400
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .r
+    {
+        font-size: 10em;
+    }
+
+    .r-1400
+    {
+        display: none;
+    }
+
+    .r-1200
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .r
+    {
+        font-size: 8em;
+    }
+
+    .r-1200
+    {
+        display: none;
+    }
+
+    .r-1024
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .r
+    {
+        font-size: 8em;
+    }
+
+    .r-1024
+    {
+        display: none;
+    }
+
+    .r-1000
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .r
+    {
+        font-size: 6em;
+    }
+
+    .r-1000
+    {
+        display: none;
+    }
+
+    .r-800
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .r
+    {
+        font-size: 5em;
+    }
+
+    .r-800
+    {
+        display: none;
+    }
+
+    .r-768
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .r
+    {
+        font-size: 5em;
+    }
+
+    .r-768
+    {
+        display: none;
+    }
+
+    .r-600
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .r
+    {
+        font-size: 4em;
+    }
+
+    .r-600
+    {
+        display: none;
+    }
+
+    .r-480
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .r
+    {
+        font-size: 4em;
+    }
+
+    .r-480
+    {
+        display: none;
+    }
+
+    .r-400
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .r
+    {
+        font-size: 4em;
+    }
+
+    .r-400
+    {
+        display: none;
+    }
+
+    .r-320
+    {
+        display: block;
+    }
+}
+
+
+/* --- iPad --------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait)
+{
+    .r-ipad-portrait
+    {
+        display: block;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape)
+{
+    .r-ipad-landscape
+    {
+        display: block;
+    }
+}
+
+
+/* --- iPhone 4(S) retina ------------------------------------------------------------------------------------------- */
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (min-device-pixel-ratio: 1.5)
+{
+    body
+    {
+        padding-top: 1em;
+    }
+
+    .r-iphone-retina
+    {
+        display: block;
+    }
+}
+
+/* --- iPhone ------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 1),
+screen and (max-device-width: 640px) and (device-pixel-ratio: 1)
+{
+    body
+    {
+        padding-top: 1em;
+    }
+
+    .r
+    {
+        font-size: 4em;
+    }
+
+    .r-iphone
+    {
+        display: block;
+    }
+}
+
+
+/* --- print (optional) --------------------------------------------------------------------------------------------- */
+
+@media print
+{
+
+}
