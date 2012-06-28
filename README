@@ -18,4 +18,4 @@ For instance:
 
 Class “.box” is constant for lower resolutions as long as we don’t override it. 
 
-Here’s the <a href="http://demos.paranoida.com/media_queries">demo</a>.
+Here’s the http://demos.paranoida.com/media_queries
