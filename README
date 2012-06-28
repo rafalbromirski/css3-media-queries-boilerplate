@@ -1,7 +1,21 @@
-Media Queries Boilerplate
-=========================
+Recently, during many projects I have been working on cross-device optimisation but never on a project that supported standard web and new devices (iOS & Android based mobile phones & tablets). Finally the day had come when I have encountered this problem.
 
-More info here:
-http://demos.paranoida.com/media_queries/
----
-http://paranoida.com
+I did a quick research and I haven’t found any satisfactory solution that was ready to download and use. That’s why I have developed my own template which helps me in creating responsive layouts. It has been tested on a couple of projects and I think the code is mature enough to be shared.
+
+Small tip: The most important thing about responsive design is to start from the widest screen resolution and proceed to the narrowest one (styles are inherited vertically).
+
+For instance:
+
+@media screen and (max-width: 1400px)
+{
+   .box { ... }
+}
+
+@media screen and (max-width: 1200px)
+{
+   ...
+}
+
+Class “.box” is constant for lower resolutions as long as we don’t override it. 
+
+Here’s the <a href="http://demos.paranoida.com/media_queries">demo</a>.
